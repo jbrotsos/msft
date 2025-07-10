@@ -39,8 +39,24 @@ jobs:
         # uses: NirAlon/appsec_scan@8e1acc918cb521e8cfe7b7350b836547ac2b21ab
         uses: NirAlon/appsec_scan@latest
 
+      - name: Aqua Security Trivy
+        # You may pin to the exact commit or the version.
+        # uses: aquasecurity/trivy-action@dc5a429b52fcf669ce959baa2c2dd26090d2a6c4
+        uses: aquasecurity/trivy-action@0.32.0
+        with:
+          # Scan type to use for scanning vulnerability
+          scan-type: fs
 
-
-
+      - name: KICS Github Action
+        # You may pin to the exact commit or the version.
+        # uses: Checkmarx/kics-github-action@3545b741daf8fc816b081261995184aa12a247c0
+        uses: Checkmarx/kics-github-action@v2.1.11
 
           
+
+      
+      
+      
+      
+      
+                
